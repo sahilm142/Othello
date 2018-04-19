@@ -1,0 +1,30 @@
+<html>
+<head> 
+<title>Othello </title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" charset="utf-8"></script> 
+    <link rel="stylesheet" href="main.css">
+    <script src="/socket.io/socket.io.js"></script>   
+</head>
+<body>
+    <div id="join">
+        <input type="text" placeholder="Enter token" value="" id="token">
+        <div>
+                <button id="create" onclick="newGame()">Create a new game</button>
+                <button id="join" onclick="joinGame()">Connect to an existing game</button>
+        </div>
+        
+    </div>
+    <div class="hide" id="boxshow">
+            <h2>OTHELLO</h2>
+            <h3 id="p1">Player One <span id="p1disp">2</span></h3>
+            <h3 id="p2">Player Two  <span id="p2disp">2</span></h3>
+            <button id="reset">Reset</button>
+            <button id="end">Quit</button>
+                  
+    </div>
+    <table id='board' class="hide"></table>  
+    
+           
+    <script src="main.js"></script>
+</body>  
+</html>
